@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD supabase</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+            />
+
+        <link rel="stylesheet" href="./styles/style.css">
+
+    </head>
+    <body>
+        <fieldset><legend>Cadastro de Dados</legend>
+            <form id='form'>
+                <input type="hidden" value='0' id='userId'>
+                <label for="nome">Nome </label><input type="text" name='nome'
+                    id='nome'>
+                <div class='col'>
+                    <label for="email">Email <input type="email" name='email'
+                            id='email'></label>
+                    <label for="telefone">Telefone <input type="text"
+                            name='telefone' id='telefone'></label>
+                </div>
+                <div class='col-2'>
+                    <label for="senha">Estado Civil: <select name="estCivil"
+                            id="estCivil">
+                            <option value="Solteiro">Solteiro</option>
+                            <option value="Casado">Casado</option>
+                        </select></label>
+                    <label for="nome">Data Nascimento: <input type='date'
+                            name='idade' id='idade' min="1950-01-02" required>
+                    </label>
+                    <label for="perfil">Perfil:
+                        <select name="perfil" id="perfil">
+                            <option value="Administrador">Administrador</option>
+                            <option value="Usuario">Usuario</option>
+                        </select>
+                    </label>
+                </div>
+                <div class='col-1'>
+                    <button type='submit' class="" id="Enviar">Enviar</button>
+                </div>
+
+            </form>
+
+
+        </fieldset>
+
+        <table id="holder">
+            <tr><th>id</th><th>nome</th><th>Email</th><th>Telefone</th><th>Data
+                    Nascimento</th><th>Estado Civil</th><th>Perfil</th><th></th><th><button
+                        class='refresh' id='refresh'><i class="fa-solid
+                            fa-arrows-rotate"></i></button></th> </tr>
+        </table>
+
+
+        <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <script src="./scripts/client.js"></script>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

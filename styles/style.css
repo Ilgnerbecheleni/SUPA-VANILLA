@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+
+fieldset{
+    margin-top:50px;
+    width:700px;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  legend{
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    
+  }
+  
+  #form{
+    display:flex;
+    flex-direction:column;
+    width:700px;
+    gap:0.5rem;
+    font-family:arial;
+  }
+  
+  .col{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:0.5rem;
+  }
+  
+  .col-2{
+    margin-top:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:0.5rem;
+  }
+  
+  
+  
+  .col-1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+  }
+  
+  #nome,#email,#estCivil,#idade,#telefone{
+    height:30px;
+    border:none;
+    background:#ddd;
+    border-radius:0.2rem;
+    outline: 1px solid white;
+  }
+  
+  .hidden{
+display: none;
+  }
+  
+  
+  #email{
+    width:330px;
+  }
+  
+  #telefone{
+    width:330px;
+  }
+  
+  #perfil{
+    height:30px;
+    background:#ddd;
+    border:none;
+    border-radius:4px;
+    outline: 1px solid white;
+  }
+  
+  
+  button{
+    height:30px;
+    width:150px;
+    background:green;
+    border-radius:4px;
+    color:white;
+    text-transform:uppercase;
+    
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td,tr {
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .delete{
+   width:40px;
+    background:none;
+    border:none;
+    color:red;
+    font-size:1rem
+  }
+  
+  
+  .update{
+    width:40px;
+    background:none;
+    border:none;
+    color:green;
+    font-size:1rem
+  }
+  
+  .refresh{
+     width:40px;
+    background:none;
+    border:none;
+    color:#333;
+    font-size:1rem;
+    cursor:pointer;
+  }
